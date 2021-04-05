@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #input {
+        margin-bottom: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #btn {
+        background-color: aquamarine;
+        border: none;
+        cursor: pointer;
+        padding: 5px 15px;
+        margin-top: 20px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+      #btn:hover {
+        background-color: cadetblue;
+        transition: 0.3s ease-in-out;
+      }
+      #btn:focus,
+      #num:focus {
+        outline: none;
+      }
+
+      tr,
+      table,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-weight: bold;
+      }
+      td {
+        height: 40px;
+        width: 70px;
+      }
+    </style>
+    <title>Táblázat kitöltése</title>
+  </head>
+  <body>
+    <div id="input">
+      <p>Adjon meg egy egész számot (1 és 25 között)</p>
+      <input type="number" id="num" />
+      <button id="btn">Táblázat Készítése</button>
+    </div>
+    <table id="table"></table>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
